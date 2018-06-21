@@ -19,7 +19,7 @@ on property:persist.spectrum.profile=0
    chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
    chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-   write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 234000
+   write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 130000
    chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1586000
    chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
@@ -51,7 +51,7 @@ on property:persist.spectrum.profile=0
    chmod 0644 /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor interactive
    chmod 0644 /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
-   write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 312000
+   write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 208000
    chmod 0644 /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 2280000
    chmod 0444 /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
@@ -116,6 +116,7 @@ on property:persist.spectrum.profile=0
    write /sys/kernel/dyn_fsync/Dyn_fsync_active 0
    write /sys/kernel/power_suspend/power_suspend_mode 3
    write /sys/class/lcd/panel/smart_on 0
+   write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
    # LMK
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,56064,81152"
@@ -267,6 +268,7 @@ on property:persist.spectrum.profile=1
    write /sys/kernel/dyn_fsync/Dyn_fsync_active 0
    write /sys/kernel/power_suspend/power_suspend_mode 2
    write /sys/class/lcd/panel/smart_on 0
+   write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
    # LMK
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,56064,81152"
@@ -278,7 +280,7 @@ on property:persist.spectrum.profile=2
    chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
    chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-   write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 234000
+   write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 130000
    chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1586000
    chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
@@ -375,6 +377,7 @@ on property:persist.spectrum.profile=2
    write /sys/kernel/dyn_fsync/Dyn_fsync_active 1
    write /sys/kernel/power_suspend/power_suspend_mode 3
    write /sys/class/lcd/panel/smart_on 0
+   write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
    # LMK
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,56064,81152"
@@ -526,6 +529,7 @@ on property:persist.spectrum.profile=3
    write /sys/kernel/dyn_fsync/Dyn_fsync_active 1
    write /sys/kernel/power_suspend/power_suspend_mode 3
    write /sys/class/lcd/panel/smart_on 0
+   write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
    # LMK
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,56064,81152"

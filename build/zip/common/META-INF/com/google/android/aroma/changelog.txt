@@ -1,0 +1,36 @@
+	
+<b>Kernel Informatiom:</b>
+
+	NOMBRE	: <b><#selectbg_g>ArianoxxKernel-Oreo</#></b>	
+	VERSIÓN	: <b><#selectbg_g>v1.0</#></b>
+	FECHA	: <b><#selectbg_g>22/06/2018</#></b>
+	AUTOR	: <b><#selectbg_g>Arianoxx</#></b>
+
+	<#f00><b>For Galaxy S7</b></#>
+
+
+<b>CHANGELOG:</b>
+
+<u><b><#selectbg_g>ArianoxxKernel-O v1.0</#></b></u>
+<*>Sources y ramdisk EREM</*>
+<*>Freq min GPU a 112MHz</*>
+<*>Spectrum Support</*>
+<*>Ajustes de voltage of CPU</*>
+<*>Zen-tune 4.10</*>
+<*>AIK Kitchen 2.9</*>
+<*>Powersuspend 4 modos, Autosleep, Userspace, LCD panel, Hybrid</*>
+<*>F2FS</*>
+<*>Updated Ondemand and  Conservative governors</*>
+<*>Mod Fake Knox 0</*>
+<*>Busybox 1.27.2</*>
+<*>SuperSu 2.82-SR4</*>
+<*>Magisk 14.2 b1420 & Manager 5.3.5</*>
+<*>Disasbled DM-Verity, Knox, RKP, Tima, Rooting Restriction</*>
+<*>SELinux Permissive</*>
+<*>Swap with LZ4 compression</*>
+<*>Dynamic Fsync</*>
+<*>Init.d support</*>
+<*>Frandom</*>
+<*>NTFS support</*>
+<*>CIFS support</*>
+

@@ -1,0 +1,112 @@
+#########
+#
+# LICENSE:
+# Copyright (C) 2011 Ahmad Amarullah ( http://amarullz.com/ )
+# Initializing kernel Information
+#
+################################################################################################################################################################# 
+ini_set("force_colorspace", "rgba");
+ini_set("kernel_name",             "ArianoxxKernel");
+ini_set("kernel_version",          "V1.0");
+ini_set("kernel_author",           "@Arianoxx");
+ini_set("kernel_device",           "S7/S7 edge");
+ini_set("kernel_date",             "22.06.2018");
+#################################################################################################################################################################
+fontresload( "0", "ttf/DroidSans.ttf;ttf/DroidSansArabic.ttf;ttf/DroidSansFallback.ttf;", "12" );
+theme("touchwiz");
+#################################################################################################################################################################
+viewbox(
+"WELCOME",
+"INSTALL <b>"+
+ini_get("kernel_name")+
+"</b> FOR <b>"+ini_get("kernel_device")+"</b>.\n\n"+
+"INFORMATION OF THE KERNEL:\n\n"+
+"<b><#009485> THE NAME \t:</#></b> <b><#009485>"+ini_get("kernel_name")+"</#></b>\n"+
+"<b><#009485> THE VERSION\t:</#></b> <b><#009485>"+ini_get("kernel_version")+"</#></b>\n"+
+"<b><#009485> THE DATE\t:</#></b> <b><#009485>"+ini_get("kernel_date")+"</#></b>\n"+
+"<b><#009485> THE DEVELPER\t:</#></b> <b><#009485>"+ini_get("kernel_author")+"</#></b>\n"+
+"<b><#f00> ONLY FOR S7/S7 Edge</#></b>\n\n\n"+	
+"<#ff0000>Credits to :</#>\n\n"+	
+"<#000000>@Lukas0610</#>\n"+	
+"<#000000>@morogoku</#>\n"+
+"<#000000>@djb77</#>\n"+
+"<#000000>@farovitus for his kernel</#>\n"+
+"<#009485>PRESS NEXT TO CONTINUE</#></b>",
+"@welcome"
+);
+#################################################################################################################################################################
+agreebox(
+"TERMS AND CONDITIONS",
+"TERMS AND CONDITIONS",
+"@license",
+resread("license.txt"),
+"I AGREE WITH TERMS AND CONDITIONS",
+"YOU MUST AGREE WITH TERMS AND CONDITIONS FIRST"
+);
+#################################################################################################################################################################
+textbox(
+"CHANGE LOG",
+"KERNEL CHANGE LOG",
+"@agreement",
+resread("changelog.txt")
+);
+#################################################################################################################################################################
+selectbox(
+		"<#009485>SuperSU Magisk and BusyBox</#>",
+		"Do you want to install?",
+		"@customize",
+		"mt.prop",
+		  
+		"Do You Want To Install Mtweaks :",	"",         				               	2,	#-- Group 1. key = "selected.1"
+			"Yes",				                                          "Kernel Manage Utility",			        0,	#-- selected.1 = 1
+			"No",					                                      "Don't Install",					                0	#-- selected.1 = 2
+		);
+#################################################################################################################################################################
+
+# SuperSU
+
+	selectbox(
+			"<#009485>Mtweaks</#>",
+			"Do You Want To Install Mtweaks?",
+			"@customize",
+			"supersu.prop",
+		  
+			"Select one",	"",         				        							               	2,	#-- Group 1. key = "selected.1"
+			"Yes",				                                          "Install SuperSU and BusyBox",			        0,	#-- selected.1 = 1
+			"Yes",				                                          "Install Magisk and BusyBox",			            1,	#-- selected.1 = 2
+			"No",					                                      "Don't Install",					                0	#-- selected.1 = 3
+		);
+#################################################################################################################################################################
+
+viewbox(
+"NOW THE INSTALLATION READY TO START",
+"PRESS NEXT TO CONTINUE TO START\n"+
+"TO CHANGE YOUR OPTIONS PRESS BACK",
+"@flashing"
+);
+#################################################################################################################################################################
+setvar("retstatus",
+install(
+"",
+"PLEASE WAIT WHILE INSTALLATION FINISHING INSTALLING <b>"+ini_get("kernel_name")+
+"</b> THIS PROCESS WILL TAKE SOME TIME",	
+"@install",	
+"THE INSTALLATION FINISHED FROM INSTALLING <b>"+ini_get("kernel_name")+
+"</b> PRESS NEXT TO CONTINUE"
+)
+);
+#################################################################################################################################################################
+checkviewbox(
+"",
+"<#selectbg_g><b>INSTALLTION COMPLETED</b></#>\n\n"+
+"<b>"+ini_get("kernel_name")+"</b> NOW INSTALLED IN YOUR PHONE",
+"@welcome",
+"REBOOT DEVICE",
+"0",
+"reboot_it"
+);
+if
+getvar("reboot_it")=="0"
+then
+reboot("onfinish");
+endif;

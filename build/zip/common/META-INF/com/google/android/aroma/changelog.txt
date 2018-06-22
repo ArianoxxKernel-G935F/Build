@@ -1,36 +1,76 @@
-	
-<b>Kernel Informatiom:</b>
+CHANGELOG
 
-	NOMBRE	: <b><#selectbg_g>ArianoxxKernel-Oreo</#></b>	
-	VERSIÓN	: <b><#selectbg_g>v1.0</#></b>
-	FECHA	: <b><#selectbg_g>22/06/2018</#></b>
-	AUTOR	: <b><#selectbg_g>Arianoxx</#></b>
+V1.3
+*Private mod fix
+*Performance optimazion (see GitHub)
+*Battery optimization (see GitHub)
+*Add cafactive gov
+*Add spectrum app in aroma
+*Reworked a bit spectrum profile
+*Switched to custom TC
+*Rebased
+*Try to fix sdcardfs
+*Disable uksm by default
+*Disable zram by default
+*Disable secure_camera (thanks to @twy2004)
+*Update wakeclock blocker
+*Update mtweaks
+*Update ramsik to ERF4
+*ArianoxxKernel spashscreen in aroma
 
-	<#f00><b>For Galaxy S7</b></#>
+V1.2
+*Updated aroma
+*Performance optimazion (see GitHub)
+*Battery optimization (see GitHub)
+*Some new wakeclock blocked
+*Update magisk
+*Add uksm
+*Update source to G935FXXU2EREM
+*Delete smart dimming from spectrum
 
+V1.1
+*Add arch_power support
+*Performance optimazion (see GitHub)
+*Battery optimization (see GitHub)
+*Media kill process
+*Improve wakeclock blocker power
 
-<b>CHANGELOG:</b>
-
-<u><b><#selectbg_g>ArianoxxKernel-O v1.0</#></b></u>
-<*>Sources y ramdisk EREM</*>
-<*>Freq min GPU a 112MHz</*>
-<*>Spectrum Support</*>
-<*>Ajustes de voltage of CPU</*>
-<*>Zen-tune 4.10</*>
-<*>AIK Kitchen 2.9</*>
-<*>Powersuspend 4 modos, Autosleep, Userspace, LCD panel, Hybrid</*>
-<*>F2FS</*>
-<*>Updated Ondemand and  Conservative governors</*>
-<*>Mod Fake Knox 0</*>
-<*>Busybox 1.27.2</*>
-<*>SuperSu 2.82-SR4</*>
-<*>Magisk 14.2 b1420 & Manager 5.3.5</*>
-<*>Disasbled DM-Verity, Knox, RKP, Tima, Rooting Restriction</*>
-<*>SELinux Permissive</*>
-<*>Swap with LZ4 compression</*>
-<*>Dynamic Fsync</*>
-<*>Init.d support</*>
-<*>Frandom</*>
-<*>NTFS support</*>
-<*>CIFS support</*>
+V1.0
+*Based on latest samsung source
+*Sources ramdisk EREM
+*Freq min GPU a 112MHz
+*Spectrum Support
+*CPU UC for Big and Little Cluster
+*GPU OC and UC 806mhz and 112mhz
+*Voltage controll and CPU Undervolt
+*Zen-tune 4.10
+*AIK Kitchen 2.9
+*-O3 Optimizations
+*Many Performance and Battery optimizations
+*Powersuspend 4 modes, Autosleep, Userspace, LCD panel, Hybrid
+*TCP Congestion many options Westwood as default
+*Updated Ondemand and  Conservative governors
+*Many Governorns to choose 
+*Schedulers many to choose noop by default
+*Mod Fake Knox 0
+*Busybox 1.27.2
+*SuperSu 2.82-SR4
+*Magisk 16.5 1420 & Manager 5.3.5
+*Disasbled DM-Verity, Knox, RKP, Tima, Rooting Restriction
+*SELinux Permissive
+*Swap with LZ4 compression
+*Dynamic Fsync
+*Fsync on/off toggle
+*Init.d support
+*Frandom
+*NTFS support
+*CIFS support
+*IO Schedulers: noop, deadline, row, cfq, bfq, fifo, fiops, sio, sioplus, tripndroid, vr, zen, maple
+*CPU Governors: cafactive, relaxed, ondemand_x, pegasusq, smartmax_eps, smartmax, smartassV2, *intellidemand,HYPER, electrodemand, dancedance, blue_active, conservative, ondemand, bioshock, *interactive, performance
+*Reduced wifi wakelocks
+*Wakelocks blocker
+*Keep a72 off with screen off
+*GPU Voltage & settings
+*Battery settings
+*Autoreset of Secure Storage
 

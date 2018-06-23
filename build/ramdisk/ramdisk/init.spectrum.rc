@@ -114,6 +114,7 @@ on property:persist.spectrum.profile=0
    # Misc
    write /sys/kernel/power_suspend/power_suspend_mode 3
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
+   write /sys/kernel/sched/arch_power 1
 
    # LMK
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,56064,81152"
@@ -263,6 +264,7 @@ on property:persist.spectrum.profile=1
    # Misc
    write /sys/kernel/power_suspend/power_suspend_mode 2
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
+   write /sys/kernel/sched/arch_power 0
 
    # LMK
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,56064,81152"
@@ -369,6 +371,7 @@ on property:persist.spectrum.profile=2
    # Misc
    write /sys/kernel/power_suspend/power_suspend_mode 3
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
+   write /sys/kernel/sched/arch_power 1
 
    # LMK
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,56064,81152"
@@ -518,6 +521,7 @@ on property:persist.spectrum.profile=3
    # Misc
    write /sys/kernel/power_suspend/power_suspend_mode 3
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
+   write /sys/kernel/sched/arch_power 0
 
    # LMK
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,56064,81152"

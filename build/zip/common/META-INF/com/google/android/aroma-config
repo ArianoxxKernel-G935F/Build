@@ -30,8 +30,8 @@ ini_get("kernel_name")+
 "<#000000>@Lukas0610</#>\n"+	
 "<#000000>@morogoku</#>\n"+
 "<#000000>@djb77</#>\n"+
-"<#000000>@farovitus for his kernel</#>\n"+
-"<#000000>@chris_drakos for his kernel</#>\n"+
+"<#000000>@farovitus for his test</#>\n"+
+"<#000000>@chris_drakos for his test</#>\n"+
 "<#009485>PRESS NEXT TO CONTINUE</#></b>",
 "@welcome"
 );

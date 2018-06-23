@@ -24,6 +24,9 @@ fi
 (
 	# tweaks
 	su -c "stop secure_storage"
+        # mediakill (Credits: lyapota)
+        killall -9 android.process.media
+        killall -9 mediaserver
 
 	# deepsleep fix
 	for i in `ls /sys/class/scsi_disk/`; do

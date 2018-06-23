@@ -36,6 +36,25 @@ on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
     setprop vold.post_fs_data_done 1
 
+# Enable kernel wakelock blocker
+	write /sys/class/kwakeblock/enabled 1
+
+# Set default blocked kernel wakelocks. They randomly prevent deep-sleep
+# from working. No instability observed when blocking these wakelocks.
+	write /sys/class/kwakeblock/block "eventpoll"
+        write /sys/class/kwakeblock/block "NETLINK"
+        write /sys/class/kwakeblock/block "qcom_rx_wakelock"
+        write /sys/class/kwakeblock/block "wlan"
+        write /sys/class/kwakeblock/block "wlan_wow_wl"
+        write /sys/class/kwakeblock/block "wlan_extscan_wl"
+        write /sys/class/kwakeblock/block "netmgr_wl"
+        write /sys/class/kwakeblock/block "wlan_rx_wake"
+        write /sys/class/kwakeblock/block "wlan_txfl_wake"
+        write /sys/class/kwakeblock/block "umts_ipc0"
+        write /sys/class/kwakeblock/block "wlan_wake"
+        write /sys/class/kwakeblock/block "wlan_ctrl_wake"
+        write /sys/class/kwakeblock/block "bcmdhd4359_wl"
+
 # Permissions for audio
     chown system radio /sys/class/audio/earjack/select_jack
     chown system radio /sys/class/audio/earjack/key_state

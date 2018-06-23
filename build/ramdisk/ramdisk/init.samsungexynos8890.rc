@@ -54,6 +54,10 @@ on post-fs-data
         write /sys/class/kwakeblock/block "wlan_wake"
         write /sys/class/kwakeblock/block "wlan_ctrl_wake"
         write /sys/class/kwakeblock/block "bcmdhd4359_wl"
+        write /sys/class/kwakeblock/block "rmnet0"
+        write /sys/class/kwakeblock/block "grip_wake_lock"
+        write /sys/class/kwakeblock/block "mmc0_detect"
+        write /sys/class/kwakeblock/block "bbd_wake_lock"
 
 # Permissions for audio
     chown system radio /sys/class/audio/earjack/select_jack

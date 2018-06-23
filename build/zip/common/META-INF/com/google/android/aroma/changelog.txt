@@ -1,5 +1,12 @@
 CHANGELOG
 
+V1.1
+*Add arch_power support
+*Performance optimazion (see GitHub)
+*Battery optimization (see GitHub)
+*Media kill process
+*Improve wakeclock blocker power
+
 V1.0
 *Based on latest samsung source
 *Sources ramdisk EREM

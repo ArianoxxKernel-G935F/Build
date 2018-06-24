@@ -33,7 +33,9 @@ pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.ab-ota=speed-profile
 debug.atrace.tags.enableflags=0
 
-ro.config.knox=v30
+#
+# TWEAKS
+#
 ro.config.tima=0
 ro.security.vaultkeeper.feature=0
 ro.securestorage.support=false
@@ -43,6 +45,9 @@ ro.config.dmverity=false
 ro.config.rkp=false
 ro.config.kap=false
 wlan.wfd.hdcp=disable
+persist.sys.scrollingcache=3
+touch.pressure.scale=0.001
+
 
 #
 # BOOTIMAGE_BUILD_PROPERTIES

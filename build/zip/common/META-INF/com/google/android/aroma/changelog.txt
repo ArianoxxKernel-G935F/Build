@@ -5,6 +5,8 @@ V1.2
 *Performance optimazion (see GitHub)
 *Battery optimization (see GitHub)
 *Some new wakeclock blocked
+*Update magisk
+*Add uksm
 
 V1.1
 *Add arch_power support

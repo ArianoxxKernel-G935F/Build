@@ -115,7 +115,6 @@ on property:persist.spectrum.profile=0
    write /sys/module/sync/parameters/fsync_enabled 0
    write /sys/kernel/dyn_fsync/Dyn_fsync_active 0
    write /sys/kernel/power_suspend/power_suspend_mode 3
-   write /sys/class/lcd/panel/smart_on 0
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
    # LMK
@@ -267,7 +266,6 @@ on property:persist.spectrum.profile=1
    write /sys/module/sync/parameters/fsync_enabled 0
    write /sys/kernel/dyn_fsync/Dyn_fsync_active 0
    write /sys/kernel/power_suspend/power_suspend_mode 2
-   write /sys/class/lcd/panel/smart_on 0
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
    # LMK
@@ -376,7 +374,6 @@ on property:persist.spectrum.profile=2
    write /sys/module/sync/parameters/fsync_enabled 0
    write /sys/kernel/dyn_fsync/Dyn_fsync_active 1
    write /sys/kernel/power_suspend/power_suspend_mode 3
-   write /sys/class/lcd/panel/smart_on 0
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
    # LMK
@@ -528,7 +525,6 @@ on property:persist.spectrum.profile=3
    write /sys/module/sync/parameters/fsync_enabled 0
    write /sys/kernel/dyn_fsync/Dyn_fsync_active 1
    write /sys/kernel/power_suspend/power_suspend_mode 3
-   write /sys/class/lcd/panel/smart_on 0
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
    # LMK

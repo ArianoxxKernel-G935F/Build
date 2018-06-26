@@ -8,6 +8,7 @@ V1.2
 *Update magisk
 *Add uksm
 *Update source to G935FXXU2EREM
+*Delete smart dimming from spectrum
 
 V1.1
 *Add arch_power support

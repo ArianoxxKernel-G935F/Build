@@ -7,6 +7,7 @@ V1.2
 *Some new wakeclock blocked
 *Update magisk
 *Add uksm
+*Update source to G935FXXU2EREM
 
 V1.1
 *Add arch_power support

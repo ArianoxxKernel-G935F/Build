@@ -7,7 +7,7 @@
 ################################################################################################################################################################# 
 ini_set("force_colorspace", "rgba");
 ini_set("rom_name",             "ArianoxxKernel");
-ini_set("rom_version",          "V1.2 - U2EREM");
+ini_set("rom_version",          "V1.2 - G935FXXU2EREM");
 ini_set("rom_author",           "@Arianoxx");
 ini_set("rom_device",           "S7/S7 edge");
 ini_set("rom_date",             "26/06/2018");
@@ -19,17 +19,18 @@ viewbox(
     "Welcome!",
     "\n\n\n\n\nYou are about to flash:\n\n\n"+
     "<b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
-    "by <b>"+ini_get("rom_author")+"</b>\n\n"+
+    "by <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n\n"+
     "VERSION:\t <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
 	"DATE:\t\t <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n"+
 	"DEVICE:\t\t <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n\n\n\n\n\n"+
-"<#ff0000>Credits to :</#>\n\n"+	
-"<#000000>@Lukas0610</#>\n"+	
-"<#000000>@morogoku</#>\n"+
-"<#000000>@djb77</#>\n"+
-"<#000000>@farovitus</#>\n"+
-"<#000000>@IAmWolf94 for his test</#>\n"+
-"<#000000>@chris_drakos for his test</#>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+
+"<b><#selectbg_g>Credits to :</#></b>\n\n"+	
+"@Lukas0610\n"+	
+"@morogoku\n"+
+"@djb77\n"+
+"@farovitus\n"+
+"@giorgatzelos\n"+
+"@IAmWolf94 for his test\n"+
+"@chris_drakos for his test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+
 "<#009485>PRESS NEXT TO CONTINUE</#></b>",
 "@welcome"
 );
@@ -51,8 +52,8 @@ resread("changelog.txt")
 );
 #################################################################################################################################################################
 selectbox(
-		"<#009485>Do u want install Mtweaks</#>",
-		"Do you want to install?",
+		"<#009485>Kernel Management</#>",
+		"Kernel Management?",
 		"@customize",
 		"mt.prop",
 		  
@@ -84,7 +85,7 @@ viewbox(
 #################################################################################################################################################################
 setvar("retstatus",
   install(
-      "Arianoxx KERENL G93xF",
+      "Arianoxx KERNEL G93xF",
 	  "<b>"+ini_get("rom_name")+"</b> are being installed.\n\n"+
       "Please wait while installation wizard installs <b>"+ini_get("rom_name")+
 	  "</b>. This may take several minutes.",
@@ -101,4 +102,5 @@ textbox(
 "Installation Completed",
 "Congratulation...",
 "@welcome",
+resread("")
 );

@@ -9,6 +9,7 @@ V1.2
 *Add uksm
 *Update source to G935FXXU2EREM
 *Delete smart dimming from spectrum
+*Fix adb
 
 V1.1
 *Add arch_power support

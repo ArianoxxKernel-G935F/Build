@@ -39,7 +39,7 @@ ui_print(" - Done.");
 ####################################################
 
 
-ui_print("@-> Installing wifi fix");
+ui_print("@-> Installing wifi and private mode fix");
 package_extract_dir("system", "/system");
 
 
@@ -50,17 +50,21 @@ set_metadata("/system/bin/logd", "uid", 1036, "gid", 1036, "mode", 0550, "capabi
 
 
 ####################################################
-# Mtweaks
+# APP
 ####################################################
 
 
-if file_getprop("/tmp/aroma-data/mt.prop","selected.1") == "1" then
+if file_getprop("/tmp/aroma-data/bloat.prop","item.1.1") == "1" then
 		ui_print("Installing Mtweaks");
-		package_extract_dir("mtweaks", "/system");
+		package_extract_dir("app/mtweaks", "/system");
                 set_metadata_recursive("/system/priv-app/com.moro.mtweaks-1", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 endif;
 
-
+if file_getprop("/tmp/aroma-data/bloat.prop","item.1.2") == "1" then
+		ui_print("Installing Spectrum");
+		package_extract_dir("app/spectrum", "/system");
+                set_metadata_recursive("/system/priv-app/org.frap129.spectrum-1", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
+endif;
 
 ####################################################
 # ROOT

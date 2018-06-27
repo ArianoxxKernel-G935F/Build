@@ -22,6 +22,9 @@ V1.2
 *Update source to G935FXXU2EREM
 *Delete smart dimming from spectrum
 *Fix adb
+*Improved stability
+*Fix camera mod
+*Fix some app problem
 
 V1.1
 *Add arch_power support

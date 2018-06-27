@@ -47,6 +47,7 @@ ro.config.kap=false
 wlan.wfd.hdcp=disable
 persist.sys.scrollingcache=3
 touch.pressure.scale=0.001
+ro.sys.sdcardfs=0
 
 
 #

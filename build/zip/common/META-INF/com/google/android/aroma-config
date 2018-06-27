@@ -51,16 +51,16 @@ textbox(
 resread("changelog.txt")
 );
 #################################################################################################################################################################
-selectbox(
-		"<#009485>Kernel Management</#>",
-		"Kernel Management?",
-		"@customize",
-		"mt.prop",
-		  
-		"Do You Want To Install Mtweaks :",	"",         				               	2,	#-- Group 1. key = "selected.1"
-			"Yes",				                                          "Kernel Manage Utility",			        0,	#-- selected.1 = 1
-			"No",					                                      "Don't Install",					                0	#-- selected.1 = 2
-		);
+checkbox(
+	  "App",
+	  "Select Which Apps You Want",
+	  "icons/personalize",
+	  "bloat.prop",
+
+	  "Select Which Apps You Want To Install :",	"",	                               		                            					2, #-- Group 1
+	  "Mtweaks",				"Kernel Manage Utility",	0,	
+	  "Spectrum",                 "App to change kernel profile",         0
+);
 #################################################################################################################################################################
 # SuperSU
 

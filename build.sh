@@ -37,7 +37,7 @@ DEFCONFIG=arianoxx_defconfig
 DEFCONFIG_S7EDGE=arianoxx_defconfig_edge
 DEFCONFIG_S7FLAT=arianoxx_defconfig_flat
 
-export K_VERSION="v1.2"
+export K_VERSION="v1.3"
 export K_NAME="ArianoxxKernel"
 export REVISION="RC"
 export KBUILD_BUILD_VERSION="1"

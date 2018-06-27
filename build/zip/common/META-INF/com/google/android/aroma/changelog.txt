@@ -1,5 +1,12 @@
 CHANGELOG
 
+V1.3
+*Private mod fix
+*Performance optimazion (see GitHub)
+*Battery optimization (see GitHub)
+*Add cafactive gov
+*Add spectrum app in aroma
+
 V1.2
 *Updated aroma
 *Performance optimazion (see GitHub)

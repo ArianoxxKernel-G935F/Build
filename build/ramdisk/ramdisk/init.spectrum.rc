@@ -85,7 +85,7 @@ on property:persist.spectrum.profile=0
 
    # HMP
    chmod 0644 /sys/kernel/hmp/up_threshold
-   write /sys/kernel/hmp/up_threshold 624
+   write /sys/kernel/hmp/up_threshold 604
    chmod 0644 /sys/kernel/hmp/down_threshold
    write /sys/kernel/hmp/down_threshold 234
 
@@ -101,7 +101,7 @@ on property:persist.spectrum.profile=0
    chmod 0644 /sys/devices/14ac0000.mali/highspeed_clock
    write /sys/devices/14ac0000.mali/highspeed_clock 419
    chmod 0644 /sys/devices/14ac0000.mali/highspeed_load
-   write /sys/devices/14ac0000.mali/highspeed_load 95
+   write /sys/devices/14ac0000.mali/highspeed_load 98
    chmod 0644 /sys/devices/14ac0000.mali/highspeed_delay
    write /sys/devices/14ac0000.mali/highspeed_delay 0
 

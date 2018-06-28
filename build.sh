@@ -13,7 +13,7 @@
 # -----
 export ARCH=arm64
 export SUBARCH=arm64
-export BUILD_CROSS_COMPILE=/home/arianoxx-dev/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export BUILD_CROSS_COMPILE=/home/arianoxx-dev/aarch64-cortex_a53-linux-gnueabi-master/bin/aarch64-cortex_a53-linux-gnueabi-
 #export BUILD_CROSS_COMPILE=/home/arianoxx-dev/kernel/toolchains/aarch64-ubertc-5.4.1-20170929/bin/aarch64-linux-android-
 #export BUILD_CROSS_COMPILE=/home/arianoxx-dev/kernel/toolchains/aarch64-ubertc-6.4.1-20170929/bin/aarch64-linux-android-
 #export BUILD_CROSS_COMPILE=/home/arianoxx-dev/kernel/toolchains/aarch64-ubertc-7.2.1-20170929/bin/aarch64-linux-android-

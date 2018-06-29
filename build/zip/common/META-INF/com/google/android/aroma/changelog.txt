@@ -1,5 +1,8 @@
 CHANGELOG
 
+V2.0
+*Who know
+
 V1.3
 *Private mod fix
 *Performance optimazion (see GitHub)

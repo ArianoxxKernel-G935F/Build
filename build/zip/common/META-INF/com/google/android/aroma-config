@@ -7,10 +7,10 @@
 ################################################################################################################################################################# 
 ini_set("force_colorspace", "rgba");
 ini_set("rom_name",             "ArianoxxKernel");
-ini_set("rom_version",          "V1.3 - G935FXXU2EREM");
+ini_set("rom_version",          "V2.0 - G935FXXU2EREM");
 ini_set("rom_author",           "@Arianoxx");
 ini_set("rom_device",           "S7/S7 edge");
-ini_set("rom_date",             "28/06/2018");
+ini_set("rom_date",             "29/06/2018");
 #################################################################################################################################################################
 fontresload( "0", "ttf/DroidSans.ttf;ttf/DroidSansArabic.ttf;ttf/DroidSansFallback.ttf;", "12" );
 theme("touchwiz");

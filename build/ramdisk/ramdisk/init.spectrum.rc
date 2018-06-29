@@ -112,8 +112,6 @@ on property:persist.spectrum.profile=0
    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
 
    # Misc
-   write /sys/module/sync/parameters/fsync_enabled 0
-   write /sys/kernel/dyn_fsync/Dyn_fsync_active 0
    write /sys/kernel/power_suspend/power_suspend_mode 3
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
@@ -263,8 +261,6 @@ on property:persist.spectrum.profile=1
    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
 
    # Misc
-   write /sys/module/sync/parameters/fsync_enabled 0
-   write /sys/kernel/dyn_fsync/Dyn_fsync_active 0
    write /sys/kernel/power_suspend/power_suspend_mode 2
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
@@ -371,8 +367,6 @@ on property:persist.spectrum.profile=2
    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
 
    # Misc
-   write /sys/module/sync/parameters/fsync_enabled 0
-   write /sys/kernel/dyn_fsync/Dyn_fsync_active 1
    write /sys/kernel/power_suspend/power_suspend_mode 3
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
 
@@ -522,8 +516,6 @@ on property:persist.spectrum.profile=3
    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
 
    # Misc
-   write /sys/module/sync/parameters/fsync_enabled 0
-   write /sys/kernel/dyn_fsync/Dyn_fsync_active 1
    write /sys/kernel/power_suspend/power_suspend_mode 3
    write /proc/sys/net/ipv4/tcp_congestion_control westwood
 

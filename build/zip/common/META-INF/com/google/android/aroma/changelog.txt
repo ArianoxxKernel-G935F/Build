@@ -8,6 +8,15 @@ V1.3
 *Add spectrum app in aroma
 *Reworked a bit spectrum profile
 *Switched to custom TC
+*Rebased
+*Try to fix sdcardfs
+*Disable uksm by default
+*Disable zram by default
+*Disable secure_camera (thanks to @twy2004)
+*Update wakeclock blocker
+*Update mtweaks
+*Update ramsik to ERF4
+*ArianoxxKernel spashscreen in aroma
 
 V1.2
 *Updated aroma

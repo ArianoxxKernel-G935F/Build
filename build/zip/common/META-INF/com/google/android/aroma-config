@@ -12,6 +12,7 @@ ini_set("rom_author",           "@Arianoxx");
 ini_set("rom_device",           "S7/S7 edge");
 ini_set("rom_date",             "28/06/2018");
 #################################################################################################################################################################
+splash(4000,"splash/AK");
 fontresload( "0", "ttf/DroidSans.ttf;ttf/DroidSansArabic.ttf;ttf/DroidSansFallback.ttf;", "12" );
 theme("touchwiz");
 #################################################################################################################################################################
@@ -53,13 +54,14 @@ resread("changelog.txt")
 #################################################################################################################################################################
 checkbox(
 	  "App",
-	  "Select Which Apps You Want",
+	  "Select Which Customization You Want",
 	  "icons/personalize",
 	  "bloat.prop",
 
-	  "Select Which Apps You Want To Install :",	"",	                               		                            					2, #-- Group 1
+	  "Select Which Customization You Want To Install :",	"",	                               		                            					2, #-- Group 1
 	  "Mtweaks",				"Kernel Manage Utility",	0,	
-	  "Spectrum",                 "App to change kernel profile",         0
+	  "Spectrum",                 "App to change kernel profile",         0,
+	  "Splashscreen",                 "Arianoxx Splashscreen",         0
 );
 #################################################################################################################################################################
 # SuperSU

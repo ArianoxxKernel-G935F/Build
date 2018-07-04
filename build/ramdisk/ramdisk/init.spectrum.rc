@@ -85,9 +85,9 @@ on property:persist.spectrum.profile=0
 
    # HMP
    chmod 0644 /sys/kernel/hmp/up_threshold
-   write /sys/kernel/hmp/up_threshold 604
+   write /sys/kernel/hmp/up_threshold 700
    chmod 0644 /sys/kernel/hmp/down_threshold
-   write /sys/kernel/hmp/down_threshold 234
+   write /sys/kernel/hmp/down_threshold 256
 
    # GPU
    chmod 0644 /sys/devices/14ac0000.mali/max_clock

@@ -119,49 +119,6 @@ on property:persist.spectrum.profile=0
 
    # LMK
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,56064,81152"
- 
-   # Downvolte Cluster1
-   echo "2600000 1100000" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2600000
-   echo "2496000 1068750" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2496000
-   echo "2392000 1043750" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2392000
-   echo "2288000 1012500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2288000
-   echo "2184000 981250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2184000
-   echo "2080000 956250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2080000
-   echo "1976000 931250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1976000
-   echo "1872000 906250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1872000
-   echo "1768000 881250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1768000
-   echo "1664000 850000" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1664000
-   echo "1560000 818750" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1560000
-   echo "1456000 793750" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1456000
-   echo "1352000 768750" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1352000
-   echo "1248000 750000" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1248000
-   echo "1144000 725000" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1144000
-   echo "1040000 706250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1040000
-   echo "936000 681250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table936000
-   echo "832000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table832000
-   echo "728000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table728000
-   echo "624000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table624000
-   echo "520000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table520000
-   echo "416000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table416000
-   echo "312000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table312000
-   echo "208000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table208000
-
-   # Downvolte Cluster0
-   echo "1586000 1018750" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1586000
-   echo "1482000 975000" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1482000
-   echo "1378000 931250" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1378000
-   echo "1274000 887500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1274000
-   echo "1170000 843750" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1170000
-   echo "1066000 806250" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1066000
-   echo "962000 768750" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table962000
-   echo "858000 737500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table858000
-   echo "754000 700000" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table754000
-   echo "650000 668750" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table650000
-   echo "546000 637500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table546000
-   echo "442000 606250" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table442000
-   echo "338000 587500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table338000
-   echo "234000 587500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table234000
-   echo "130000 587500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table130000
 
 # Performance
 on property:persist.spectrum.profile=1
@@ -378,49 +335,6 @@ on property:persist.spectrum.profile=2
 
    # LMK
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,56064,81152"
-
-   # Downvolte Cluster1
-   echo "2600000 1100000" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2600000
-   echo "2496000 1068750" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2496000
-   echo "2392000 1043750" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2392000
-   echo "2288000 1012500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2288000
-   echo "2184000 981250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2184000
-   echo "2080000 956250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table2080000
-   echo "1976000 931250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1976000
-   echo "1872000 906250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1872000
-   echo "1768000 881250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1768000
-   echo "1664000 850000" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1664000
-   echo "1560000 818750" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1560000
-   echo "1456000 793750" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1456000
-   echo "1352000 768750" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1352000
-   echo "1248000 750000" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1248000
-   echo "1144000 725000" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1144000
-   echo "1040000 706250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table1040000
-   echo "936000 681250" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table936000
-   echo "832000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table832000
-   echo "728000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table728000
-   echo "624000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table624000
-   echo "520000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table520000
-   echo "416000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table416000
-   echo "312000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table312000
-   echo "208000 662500" > /sys/devices/system/cpu/mp-cpufreq/cluster1_volt_table208000
-
-   # Downvolte Cluster0
-   echo "1586000 1018750" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1586000
-   echo "1482000 975000" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1482000
-   echo "1378000 931250" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1378000
-   echo "1274000 887500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1274000
-   echo "1170000 843750" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1170000
-   echo "1066000 806250" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table1066000
-   echo "962000 768750" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table962000
-   echo "858000 737500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table858000
-   echo "754000 700000" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table754000
-   echo "650000 668750" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table650000
-   echo "546000 637500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table546000
-   echo "442000 606250" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table442000
-   echo "338000 587500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table338000
-   echo "234000 587500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table234000
-   echo "130000 587500" > /sys/devices/system/cpu/mp-cpufreq/cluster0_volt_table130000
 
 # Gaming
 on property:persist.spectrum.profile=3

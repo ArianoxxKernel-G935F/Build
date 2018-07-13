@@ -70,9 +70,9 @@ if file_getprop("/tmp/aroma-data/bloat.prop","item.1.2") == "1" then
 endif;
 
 if file_getprop("/tmp/aroma-data/bloat.prop","item.1.3") == "1" then
-		package_extract_dir("app/splash/s", "/tmp/s");
-		run_program("/sbin/busybox", "unzip", "/tmp/s/Arianoxx.zip", "META-INF/com/google/android/*", "-d", "/tmp/s");
-		run_program("/sbin/busybox", "sh", "/tmp/s/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/s/Arianoxx.zip");
+		package_extract_dir("app/splash", "/tmp/splash");
+		run_program("/sbin/busybox", "unzip", "/tmp/splash/Arianoxx.zip", "META-INF/com/google/android/*", "-d", "/tmp/splash");
+		run_program("/sbin/busybox", "sh", "/tmp/s/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/splash/Arianoxx.zip");
 endif;
 ####################################################
 # ROOT
@@ -125,7 +125,9 @@ ui_print("-- Installing Busybox...");
     endif;
 
 #####################################################
-
+ui_print("@-> Clean cache and dalvik");
+delete_recursive("/cache");
+delete_recursive("/data/dalvik-cache");
 ui_print(" ");
 ui_print("@-> Unmounting Partition");
 ifelse(is_mounted("/system"), unmount("/system"));
